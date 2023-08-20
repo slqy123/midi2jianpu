@@ -1,0 +1,9 @@
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pdm-python
+tests/res*
+pdm.lock
+__*

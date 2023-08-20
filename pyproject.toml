@@ -1,0 +1,14 @@
+
+[project]
+name = "midi2jianpu"
+version = "0.1"
+description = "transform wavetone midi file to lilypond jianpu"
+authors = [
+    {name = "quy", email = "sqiyel@gmail.com"},
+]
+dependencies = [
+    "mido>=1.2.10",
+    "click>=8.1.7",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
