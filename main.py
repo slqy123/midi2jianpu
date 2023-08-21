@@ -179,6 +179,7 @@ def main(
     insert_zero: int,
 ):
     global SEP
+    insert_zero *= 120
     midi = mido.MidiFile(midi_path)
     assert midi.ticks_per_beat == TICKS_PER_BEAT
 
@@ -213,7 +214,7 @@ def main(
 
     track = []
 
-    sep = -insert_zero * 120
+    sep = -insert_zero
     for i in range(len(midi.tracks[0]) - 2):
         msg1: mido.messages.messages.Message = midi.tracks[0][i]
         msg2: mido.messages.messages.Message = midi.tracks[0][i + 1]
